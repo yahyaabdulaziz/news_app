@@ -1,16 +1,29 @@
-# news_app
+# News App
 
-"News App with Api"
+The News app is a Flutter application that provides users with access to the latest news articles from various sources and categories.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Browse Categories:** View the six categories technology, business, sports, and more.
+- **Browse News:** View the latest news articles from different categories such as technology, business, sports, and more.
+- **Search Functionality:** Search for specific news articles using keywords.
+- **Save Favorites:** Save favorite articles for easy access later.
+- **See Full details:** Opening web view for reading the full article.
 
-A few resources to get you started if this is your first Flutter project:
+## Packages
+- cupertino_icons.
+- http.
+- cached_network_image.
+- google_fonts.
+- timeago.
+- webview_flutter.
+- firebase_core.
+- firebase_auth.
+- cloud_firestore.
+- flutter_local_notifications.
+- firebase_database.
+- provider.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Clone the repository:
+  **path**
+   git clone https://github.com/yahyaabdulaziz/news_app.git

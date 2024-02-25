@@ -3,16 +3,16 @@ import 'package:news_app/model/CategoryDM.dart';
 import 'package:news_app/ui/widget/category_widget.dart';
 
 class CategoriesTab extends StatelessWidget {
-  final Function oncategoryclick;
+  final Function onCategoryClick;
 
-  const CategoriesTab(this.oncategoryclick, {super.key});
+  const CategoriesTab(this.onCategoryClick, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.all(12),
+          margin: const EdgeInsets.all(12),
           child: const Text(
             "pick your category of inerest",
             style: TextStyle(
@@ -27,7 +27,7 @@ class CategoriesTab extends StatelessWidget {
               itemBuilder: (context, index) {
                 return InkWell(
                   onTap: () {
-                    oncategoryclick(CategoryDM.categotries[index]);
+                    onCategoryClick(CategoryDM.categotries[index]);
                   },
                   child: CatregoryWidget(
                     categoryDM: CategoryDM.categotries[index],

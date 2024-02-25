@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/data/api/api_manger.dart';
 import 'package:news_app/model/sources_response.dart';
-import 'package:news_app/ui/screens/home/tabs/news/newslist/news_list.dart';
+import 'package:news_app/ui/screens/home/tabs/news/news_list/news_list.dart';
 import 'package:news_app/ui/widget/error_view.dart';
 import 'package:news_app/ui/widget/loading_view.dart';
 
@@ -27,7 +27,7 @@ class _NewsTabState extends State<NewsTab> {
           } else if (snapshot.hasError) {
             return ErrorView(message: snapshot.error.toString());
           } else {
-            return LoadingView();
+            return const LoadingView();
           }
         });
   }
@@ -66,14 +66,19 @@ class _NewsTabState extends State<NewsTab> {
   }
 
   Widget buildTabWidget(String name, bool isSelected) {
-    return Container(
-        padding: EdgeInsets.all(12),
+    return Tab(
+      child: Container(
+        padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: isSelected ? Colors.green : Colors.white,
+          color: isSelected ? Colors.grey : Colors.white,
           borderRadius: BorderRadius.circular(24),
-          border: Border.all(color: Colors.green),
+          border: Border.all(color: Colors.black),
         ),
-        child: Text(name,
-            style: TextStyle(color: isSelected ? Colors.white : Colors.green)));
+        child: Text(
+          name,
+          style: TextStyle(color: isSelected ? Colors.black : Colors.black),
+        ),
+      ),
+    );
   }
 }

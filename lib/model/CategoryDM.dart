@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class CategoryDM {
@@ -22,13 +20,13 @@ class CategoryDM {
         title: "Sports",
         imagePath: "assets/images/ball.png",
         isLeftSided: true,
-        backgroundColor: Colors.red[900]!),
+        backgroundColor: Colors.red[600]!),
     CategoryDM(
         id: "technology",
         title: "Technology",
         imagePath: "assets/images/Politics.png",
         isLeftSided: false,
-        backgroundColor: Colors.blue[900]!),
+        backgroundColor: Colors.blue[600]!),
     CategoryDM(
         id: "health",
         title: "Health",
@@ -40,10 +38,10 @@ class CategoryDM {
         title: "Business",
         imagePath: "assets/images/bussines.png",
         isLeftSided: false,
-        backgroundColor: Colors.orange[900]!),
+        backgroundColor: Colors.orange[600]!),
     CategoryDM(
         id: "entertainment",
-        title: "Sports",
+        title: "Entertainment",
         imagePath: "assets/images/environment.png",
         isLeftSided: true,
         backgroundColor: Colors.lightBlue),
@@ -52,6 +50,6 @@ class CategoryDM {
         title: "Science",
         imagePath: "assets/images/science.png",
         isLeftSided: false,
-        backgroundColor: Colors.yellow[500]!)
+        backgroundColor: Colors.yellow[600]!)
   ];
 }

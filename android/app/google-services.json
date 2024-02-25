@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "841114353706",
+    "project_id": "todo-569cf",
+    "storage_bucket": "todo-569cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841114353706:android:e27a3f403044bfcb0a4353",
+        "android_client_info": {
+          "package_name": "com.example.news_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJOznj4nZbSABZUaLM2nkwafv4Dn9vZQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
